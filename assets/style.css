@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+header {
+    display: flex;
+    background-color: aqua;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    background-color: black;
+    color: white;
+    height: 44px;
+}
+
+.subtitle {
+    display: flex;
+    background: darkblue;
+    color: white;
+    height: 236px;
+}
+
+.about-me {
+    display: flex;
+    background-color: lightblue;
+    height: 280px
+}
+
+.work {
+    display: flex;
+    background-color: blueviolet;
+    flex-direction: column;
+    height: 800px;
+}
+
+footer {
+    display: flex;
+    background-color: aqua;
+}
