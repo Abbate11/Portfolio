@@ -94,10 +94,17 @@ nav a {
 /* Projects */
 .work {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
     background-color: blueviolet;
-    flex-direction: column;
     height: 800px;
 }
+
+.work > * {
+    flex: 1;
+}
+
+
 
 /* Footer */
 footer {
