@@ -1,45 +1,97 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
 * {
-    margin: auto;
-    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Oswald';
 }
-
+/* Header Section */
 header {
     display: flex;
     background-color: aqua;
-    justify-content: flex-start;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
 }
 
 nav {
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 10%;
+}
+
+nav a {
+    font-size: 1.5rem;
 }
 
 .name {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: black;
     color: white;
-    height: 44px;
+    width: 30%;
+    height: 4.5rem;
+    padding: 5px 20px 5px 40px;
 }
 
+.name h1 {
+    font-size: 4.5rem;
+}
+/* Second section */
 .subtitle {
     display: flex;
-    background: darkblue;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(./images/background.jpg);
     color: white;
-    height: 236px;
+    height: 20rem;
 }
 
+
+.devs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    height: 4vmin;
+    width: 20%;
+}
+
+.devs h2 {
+    font-size: 2vmin;
+}
+
+/* About me */
 .about-me {
     display: flex;
+    justify-content: space-between;
     background-color: lightblue;
-    height: 280px
+    height: 30vh
 }
 
+.about-me h1 {
+    align-self: center;
+    text-align: center;
+    font-size: 5rem;
+    width: 25%;
+    border-right: 5px solid black;
+    padding-right: 5%;
+}
+
+.about-me p {
+    align-self: center;
+    justify-self: center;
+    font-size: 2vmin;
+    padding: 5%;
+}
+
+/* Projects */
 .work {
     display: flex;
     background-color: blueviolet;
@@ -47,7 +99,14 @@ nav {
     height: 800px;
 }
 
+/* Footer */
 footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: aqua;
+}
+
+@media screen {
+    
 }
