@@ -1,26 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
 * {
-    margin: 0;
+ margin: 0;
 }
 
 body {
     font-family: 'Oswald';
 }
+
 /* Header Section */
+
 header {
     display: flex;
     flex-wrap: wrap;
     background-color: aqua;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
 }
+
 
 nav {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
     gap: 10%;
+    margin-bottom: 1cqh;
 }
 
 nav a {
@@ -33,25 +38,59 @@ nav a {
     align-items: center;
     background-color: black;
     color: white;
-    width: 30%;
-    height: 4.5rem;
-    padding: 5px 20px 5px 40px;
+    padding: 0 5% 0 25%;
+    margin-top: 2cqh;
+    margin-bottom: 2cqh;
 }
 
 .name h1 {
-    font-size: 4.5rem;
+    font-size: 2rem;
 }
+
 /* Second section */
 
+main {
+    margin: 0 0 0 10%;
+}
 
+.subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./images/background.jpg);
+    height: 25vh;
+}
+
+.background {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.quote {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0 25% 0 5%;
+}
+
+.quote h2 {
+    line-height: 2.5;
+}
 
 
 /* Footer */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: blueviolet;
+}
+
+footer h1 {
+    justify-self: flex-start;
 }
 
 @media screen {
