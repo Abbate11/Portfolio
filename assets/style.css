@@ -38,47 +38,102 @@ nav a {
     align-items: center;
     background-color: black;
     color: white;
-    padding: 0 5% 0 25%;
-    margin-top: 2cqh;
-    margin-bottom: 2cqh;
+    padding: 0 3% 0 25%;
+    margin-top: 3cqh;
+    margin-bottom: 3cqh;
 }
 
-.name h1 {
-    font-size: 2rem;
+.name h2 {
+    font-size: 5.5rem;
 }
-
-/* Second section */
+/* Quote section */
 
 main {
     margin: 0 0 0 10%;
 }
 
-.subtitle {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(./images/background.jpg);
-    height: 25vh;
-}
-
 .background {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: flex-end;
+    background-image: url(./images/background.jpg);
+    height: 22vh;
 }
 
 
 .quote {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     background-color: black;
     color: white;
-    padding: 0 25% 0 5%;
+    padding: 0 13% 0 5%;
+    margin-top: 8cqh;
+    margin-bottom: 8cqh;
 }
 
 .quote h2 {
-    line-height: 2.5;
+    font-size: 2rem;
 }
+
+/* About me section */
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.title-about-me {
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border-right: 1px solid black;
+}
+
+.info {
+ padding-left: 2rem;
+}
+
+/* work section */
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid red;
+}
+
+.title-work {
+    height: 100%;
+    align-self: flex-start;
+    padding-right: 2.6rem;
+    margin-right: 2rem;
+    border-right: 1px solid black;
+}
+
+.cards {
+    align-self: center;
+    margin-right: 50%;
+    margin-left: 50%;
+}
+
+.big-card {
+    box-sizing: border-box;
+    border: 1px solid red;
+    height: 400px;
+    width: 400px;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid red;
+    height: 100px;
+    width: 300px;
+}
+
 
 
 /* Footer */
@@ -93,6 +148,3 @@ footer h1 {
     justify-self: flex-start;
 }
 
-@media screen {
-    
-}
