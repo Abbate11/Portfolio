@@ -61,7 +61,7 @@ nav a:hover {
 
 main {
     background-color: black;
-    margin: 0 10% 0 10%;
+    margin: 0 5% 0 5%;
 }
 
 .background {
@@ -172,7 +172,7 @@ main {
     font-size: 1.3rem;
     border: ridge;
     background-image: url(./images/background.jpg);
-    cursor: cell;
+    cursor: pointer;
 }
 
 .big-card a:hover {
@@ -207,6 +207,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(12, 49, 12);
+    width: 100%;
 }
 
 footer h1 {
@@ -218,6 +219,7 @@ footer a {
     color: green;
     font-size: 1.5rem;
     text-decoration: none;
+    gap: 1rem;
 }
 
 footer a:nth-child(n+4):hover {
