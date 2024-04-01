@@ -7,6 +7,7 @@
 body {
     font-family: 'Oswald';
     background-color: black;
+    margin: 0;
 }
 
 /* Header Section */
@@ -17,22 +18,23 @@ header {
     background-color: rgb(12, 49, 12);
     justify-content: space-between;
     align-items: center;
-    white-space: nowrap;
 }
 
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 50%;
     gap: 5%;
-    margin-bottom: 1cqh;
+    margin-top: 4cqh;
 }
 
 nav a {
     color: green;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 2rem 3rem;
     text-decoration: none;
     cursor: cell;
 }
@@ -40,6 +42,7 @@ nav a {
 nav a:hover {
     color: white;
     text-shadow: rgb(3, 211, 3) 2px 2px 2px;
+    transition: 500ms;
 }
 
 .name {
@@ -58,15 +61,15 @@ nav a:hover {
 }
 
 .name:hover {
-    box-shadow: rgb(2, 151, 2) 3px -3px 5px 2px, inset rgb(2, 151, 2) 3px -3px 5px 2px;
-    transition: 1.5s;
+    box-shadow: rgb(2, 151, 2) 0px 6px 6px 3px;
+    transition: 1s;
 }
 
 /* Quote section */
 
 main {
     background-color: black;
-    margin: 0 5% 0 5%;
+    margin: 0 2% 0 2%;
 }
 
 .background {
@@ -89,8 +92,8 @@ main {
 }
 
 .quote:hover {
-    box-shadow: rgb(2, 151, 2) -3px 3px 5px 2px;
-    transition: 2s;
+    box-shadow: rgb(2, 151, 2) -3px 6px 5px 2px;
+    transition: 1s;
 }
 
 .quote h2 {
@@ -105,12 +108,13 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+    margin-right: 10%;
     /* border: 1px solid red; */
 }
 
 .title-about-me {
     color:rgb(207, 207, 207);
-    padding-right: 2rem;
+    padding-right: 5%;
     margin-right: 2rem;
     border-right: 5px solid rgb(12, 49, 12);
     height: 15rem;
@@ -121,7 +125,7 @@ main {
     font-size: 1.6rem;
     color: rgb(207, 207, 207);
     margin: 0rem 2rem 2rem 2rem;
-    text-indent: 50px;
+    text-align: center;
 }
 
 /* work section */
@@ -133,16 +137,17 @@ main {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-right: 10%;
 }
 
 
 .title-work {
     color: rgb(207, 207, 207);
     align-self: flex-start;
-    padding-right: 2.6rem;
+    padding-right: 5%;
     margin-right: 2rem;
     border-right: 5px solid rgb(12, 49, 12);
-    height: 30rem;
+    height: 66rem;
 }
 
 .cards {
@@ -152,7 +157,7 @@ main {
     justify-content: center;
     align-content: center;
     /* border: 1px solid red; */
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem 2rem -4rem;
     width: 100%;
     height: 100%;
 }
@@ -178,8 +183,8 @@ main {
     align-self: flex-end;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    margin-bottom: 3%;
-    margin-left: 3%;
+    margin-bottom: 1%;
+    margin-left: 2%;
     height: 6rem;
     width: 10rem;
     background-color: black;
@@ -188,7 +193,7 @@ main {
     font-size: 1.3rem;
     font-weight: 900;
     line-height: 1.5;
-    border: ridge;
+    border: 2px solid black;
     background-image: url(./images/background.jpg);
     cursor: pointer;
     border-radius: 20px;
@@ -220,8 +225,8 @@ main {
 }
 
 .card:hover {
-    box-shadow: rgb(2, 151, 2) 3px 3px 5px 3px;
-    transition: 500ms;
+    box-shadow: rgb(2, 151, 2) 2px 2px 5px 3px;
+    transition: 850ms;
 }
 
 
@@ -229,6 +234,7 @@ main {
 /* Footer */
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(12, 49, 12);
@@ -245,11 +251,13 @@ footer a {
     font-size: 1.5rem;
     text-decoration: none;
     gap: 1rem;
+    padding: 5rem 5rem;
 }
 
 footer a:nth-child(n+4):hover {
     color: white;
     text-shadow: rgb(3, 211, 3) 2px 2px 2px;
+    transition: 500ms;
 }
 
 footer a:nth-child(-n+3):hover {
