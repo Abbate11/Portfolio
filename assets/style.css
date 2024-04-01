@@ -110,7 +110,7 @@ main {
 .info {
     font-size: 1.6rem;
     color: rgb(207, 207, 207);
-    margin: 2rem;
+    margin: 0rem 2rem 2rem 2rem;
     text-indent: 50px;
 }
 
@@ -155,6 +155,12 @@ main {
     flex: 100%;
     margin: 0 1rem 1rem 1rem;
     background: url(./images/Refactor.jpg) center/cover;
+    border-radius: 20px;
+}
+
+.big-card:hover {
+    box-shadow: rgb(2, 151, 2) 3px 3px 5px 3px;
+    transition: 500ms;
 }
 
 .big-card a {
@@ -164,15 +170,18 @@ main {
     position: absolute;
     margin-bottom: 3%;
     margin-left: 3%;
-    height: 3rem;
+    height: 6rem;
     width: 10rem;
     background-color: black;
     color: white;
     text-align: center;
     font-size: 1.3rem;
+    font-weight: 900;
+    line-height: 1.5;
     border: ridge;
     background-image: url(./images/background.jpg);
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .big-card a:hover {
@@ -197,6 +206,12 @@ main {
     height: 10rem;
     width: 20rem;
     background: url(./images/Coming\ soon.jpg) center/cover;
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: rgb(2, 151, 2) 3px 3px 5px 3px;
+    transition: 500ms;
 }
 
 
