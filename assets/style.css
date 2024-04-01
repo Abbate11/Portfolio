@@ -38,7 +38,6 @@ nav a {
 }
 
 nav a:hover {
-    font-size: 2rem;
     color: white;
     text-shadow: rgb(3, 211, 3) 2px 2px 2px;
 }
@@ -47,7 +46,7 @@ nav a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
+    background: url(./images/stars.jpg) center;
     padding: 0 3% 0 25%;
     margin-top: 3cqh;
     margin-bottom: 3cqh;
@@ -57,6 +56,12 @@ nav a:hover {
     color:white;
     font-size: 5.5rem;
 }
+
+.name:hover {
+    box-shadow: rgb(2, 151, 2) 3px -3px 5px 2px, inset rgb(2, 151, 2) 3px -3px 5px 2px;
+    transition: 1.5s;
+}
+
 /* Quote section */
 
 main {
@@ -76,11 +81,16 @@ main {
 .quote {
     display: flex;
     align-items: center;
-    background-color: black;
     color: rgb(207, 207, 207);
     padding: 0% 13% 0% 3%;
     margin-top: 8cqh;
     margin-bottom: 8cqh;
+    background: url(./images/stars.jpg) center;
+}
+
+.quote:hover {
+    box-shadow: rgb(2, 151, 2) -3px 3px 5px 2px;
+    transition: 2s;
 }
 
 .quote h2 {
@@ -119,7 +129,7 @@ main {
 .work {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -138,6 +148,7 @@ main {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
     justify-content: center;
     align-content: center;
     /* border: 1px solid red; */
@@ -150,9 +161,8 @@ main {
 .big-card {
     display: flex;
     /* border: 1px solid red; */
-    height: 700px;
-    width: 100%;
-    flex: 100%;
+    height: 44rem;
+    width: 60%;
     margin: 0 1rem 1rem 1rem;
     background: url(./images/Refactor.jpg) center/cover;
     border-radius: 20px;
@@ -160,7 +170,7 @@ main {
 
 .big-card:hover {
     box-shadow: rgb(2, 151, 2) 3px 3px 5px 3px;
-    transition: 500ms;
+    transition: 1s;
 }
 
 .big-card a {
@@ -186,7 +196,7 @@ main {
 
 .big-card a:hover {
     box-shadow: rgb(2, 151, 2) 3px 3px 5px 3px;
-    transition: 500ms;
+    transition: 700ms;
 }
 
 
@@ -198,13 +208,13 @@ main {
     gap: 1rem;
     margin: 1rem;
     /* border: 1px solid red; */
-    width: 100%;
+    width: 60%;
 }
 
 .card {
     /* border: 1px solid red; */
-    height: 10rem;
-    width: 20rem;
+    height: 20rem;
+    width: 40rem;
     background: url(./images/Coming\ soon.jpg) center/cover;
     border-radius: 20px;
 }
@@ -238,7 +248,6 @@ footer a {
 }
 
 footer a:nth-child(n+4):hover {
-    font-size: 2rem;
     color: white;
     text-shadow: rgb(3, 211, 3) 2px 2px 2px;
 }
@@ -248,7 +257,8 @@ footer a:nth-child(-n+3):hover {
 }
 
 /* @media screen and (max-width: 675px) {
-    .small-cards {
+    .cards {
         flex-flow: column wrap;
     }
 } */
+  
