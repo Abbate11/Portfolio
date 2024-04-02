@@ -50,6 +50,7 @@ nav a:hover {
     justify-content: flex-end;
     align-items: center;
     background: url(./images/stars.jpg) center;
+    background-attachment: fixed;
     padding: 0 3% 0 25%;
     margin-top: 3cqh;
     margin-bottom: 3cqh;
@@ -63,6 +64,7 @@ nav a:hover {
 .name:hover {
     box-shadow: rgb(2, 151, 2) 0px 6px 6px 3px;
     transition: 1s;
+    cursor: default;
 }
 
 /* Quote section */
@@ -77,6 +79,7 @@ main {
     flex-wrap: wrap;
     justify-content: flex-end;
     background-image: url(./images/background.jpg);
+    background-attachment: fixed;
     height: 22vh;
 }
 
@@ -89,11 +92,13 @@ main {
     margin-top: 8cqh;
     margin-bottom: 8cqh;
     background: url(./images/stars.jpg) center;
+    background-attachment: fixed;
 }
 
 .quote:hover {
     box-shadow: rgb(2, 151, 2) -3px 6px 5px 2px;
     transition: 1s;
+    cursor: default;
 }
 
 .quote h2 {
@@ -109,16 +114,14 @@ main {
     align-items: center;
     margin-top: 2rem;
     margin-right: 10%;
-    /* border: 1px solid red; */
 }
 
 .title-about-me {
     color:rgb(207, 207, 207);
-    padding-right: 5%;
+    padding-right: 4vw;
     margin-right: 2rem;
     border-right: 5px solid rgb(12, 49, 12);
     height: 15rem;
-    /* border: 1px solid red; */
 }
 
 .info {
@@ -144,10 +147,10 @@ main {
 .title-work {
     color: rgb(207, 207, 207);
     align-self: flex-start;
-    padding-right: 5%;
+    padding-right: 5vw;
     margin-right: 2rem;
     border-right: 5px solid rgb(12, 49, 12);
-    height: 66rem;
+    height: 120vh;
 }
 
 .cards {
@@ -156,8 +159,7 @@ main {
     justify-self: center;
     justify-content: center;
     align-content: center;
-    /* border: 1px solid red; */
-    margin: 0 2rem 2rem -4rem;
+    margin-bottom: 15vh;
     width: 100%;
     height: 100%;
 }
@@ -165,8 +167,7 @@ main {
 
 .big-card {
     display: flex;
-    /* border: 1px solid red; */
-    height: 44rem;
+    height: 60vh;
     width: 60%;
     margin: 0 1rem 1rem 1rem;
     background: url(./images/Refactor.jpg) center/cover;
@@ -208,18 +209,30 @@ main {
 
 .small-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    flex-direction: column;
     margin: 1rem;
-    /* border: 1px solid red; */
     width: 60%;
 }
 
+.first-two {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    margin-bottom: 2%;
+}
+
+.second-two {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    margin-top: 2%;
+}
+
 .card {
-    /* border: 1px solid red; */
     height: 20rem;
-    width: 40rem;
+    width: 50%;
     background: url(./images/Coming\ soon.jpg) center/cover;
     border-radius: 20px;
 }
@@ -227,6 +240,7 @@ main {
 .card:hover {
     box-shadow: rgb(2, 151, 2) 2px 2px 5px 3px;
     transition: 850ms;
+    cursor: pointer;
 }
 
 
@@ -261,6 +275,10 @@ footer a:nth-child(n+4):hover {
 }
 
 footer a:nth-child(-n+3):hover {
+    cursor: text;
+}
+
+footer h1:hover {
     cursor: default;
 }
 
