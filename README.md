@@ -4,6 +4,8 @@
 
 Built a first portfolio to practice HTML/CSS concepts and hold various projects done in class.
 
+Learned a lot about using flexbox and various css properties to style a website and make it responsive. (still some work to do in order to make site fully responsive for mobile screens)
+
 ## License
 
 -See MIT License in repository-
